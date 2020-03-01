@@ -1,8 +1,8 @@
 # xgboost-AutoTune
-Package allows for auto-tuninng `xgbooxt.XGBRegressor` parameters. Model usues GridSearchCV. Tested for Python 3.5.2.
+Package allows for the auto-tuninng of `xgbooxt.XGBRegressor` parameters. Model usues GridSearchCV. Tested for Python 3.5.2.
 
 ## Preface
-**Please keep in mind it's not tutorial on boosting methods**, but library for auto-tuning them. I assume you are familiar with bosting. If not, firstly visit the pages below: 
+**Please keep in mind it's not tutorial on boosting methods**, but library for auto-tuning them. I assume you are familiar with bosting. If not, first visit the pages below: 
 
 http://xgboost.readthedocs.io/en/latest/model.html 
 
@@ -11,7 +11,7 @@ https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-l
 ## Instalation
 `pip3 install git+git://github.com/SylwiaOliwia2/xgboost-AutoTune@choose-params`
 
-Note that xgboost-AutoTune depends on Numpy and Sklearn.
+Dependencies - numpy and scikit_learn.
 
 ## Create scorer
 Before runnheader_titleing you need to define scoring. The easier way is using `sklearn.metrics.make_scorer`. You can see example in [custom_metrics.py](https://github.com/SylwiaOliwia2/xgboost-AutoTune/blob/choose-params/custom_metrics.py).
@@ -88,7 +88,7 @@ If new values are float and int is required, values are rounded.
 `n_estimators` and `learning_rate` are chosen pairwise. Algorithm takes its values from model and train them pairwise: (n* `n_estimators` , `learning_rate`/ n ). 
 
 ## Sources
-xgboost-AutoTune bases on the advises from the posts below: 
+xgboost-AutoTune is based on the suggestions from the posts below: 
 
 http://xgboost.readthedocs.io/en/latest/how_to/param_tuning.html 
 
